@@ -120,3 +120,51 @@ main {
     color: $textTertiary;
   }
 }
+.right_container_proteine_info {
+  p:nth-child(1) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $baton;
+  }
+  p:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: $textTertiary;
+  }
+}
+.right_container_glucide_info {
+  p:nth-child(1) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $baton;
+  }
+  p:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: $textTertiary;
+  }
+}
+.right_container_lipide_info {
+  p:nth-child(1) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $baton;
+  }
+  p:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: $textTertiary;
+  }
+}
