@@ -1,0 +1,36 @@
+.activite {
+  margin-top: 4rem;
+  width: 100%;
+  height: 20rem;
+  border: 1px solid black;
+  background-color: $bgelement;
+  border-radius: 5px;
+  &_top {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    p:nth-child(1) {
+      width: 60%;
+      padding-left: 2rem;
+    }
+    &_info {
+      display: flex;
+      width: 40%;
+      &_poids {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 0.5rem;
+        }
+      }
+      &_calorie {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        p {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

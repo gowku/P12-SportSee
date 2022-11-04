@@ -1,0 +1,122 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header_nav_top {
+  li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $textPrimary;
+  }
+}
+aside {
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: $textPrimary;
+  }
+}
+main {
+  .top {
+    p:nth-child(1) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 1.5rem;
+    }
+    span {
+      color: $nameColor;
+    }
+    p:nth-child(2) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.activite_top-quotidienne {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: $textSecondary;
+}
+.activite_top_info_poids {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: $textTertiary;
+}
+.activite_top_info_calorie {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: $textTertiary;
+}
+
+.session {
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: $textPrimary;
+  }
+}
+
+.kpi {
+  p:nth-child(1) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: $textSecondary;
+  }
+  .pourcentage {
+    p:nth-child(1) {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+    }
+    p:nth-child(2) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      color: $textTertiary;
+    }
+    p:nth-child(3) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      color: $textTertiary;
+    }
+  }
+}
+
+.right_container_calorie_info {
+  p:nth-child(1) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: $baton;
+  }
+  p:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: $textTertiary;
+  }
+}

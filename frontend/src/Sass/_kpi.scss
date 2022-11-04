@@ -1,0 +1,21 @@
+.kpi {
+  width: 16.1rem;
+  height: 16.4rem;
+  background-color: $bgelement;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &_absolute {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+  }
+
+  .pourcentage {
+    width: 4rem;
+    text-align: center;
+  }
+}

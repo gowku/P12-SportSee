@@ -1,0 +1,15 @@
+html {
+  width: 1440px;
+  min-width: 1024px;
+  height: 1024px;
+  min-height: 720px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  border: 1px solid blue;
+  position: relative;
+}
