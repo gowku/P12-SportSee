@@ -4,7 +4,7 @@ import Right from "../right/Right";
 
 function Container() {
   return (
-    <div class="container">
+    <div className="container">
       <Left />
       <Right />
     </div>

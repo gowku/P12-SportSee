@@ -5,7 +5,7 @@ import Kpi from "../kpi/Kpi";
 
 function Objectif() {
   return (
-    <div class="objectif">
+    <div className="objectif">
       <Session />
       <Radar />
       <Kpi />

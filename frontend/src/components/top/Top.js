@@ -2,7 +2,7 @@ import React from "react";
 
 function Top() {
   return (
-    <div class="top">
+    <div className="top">
       <p>
         Bonjour <span>Thomas</span>
       </p>

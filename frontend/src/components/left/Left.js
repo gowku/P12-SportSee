@@ -4,7 +4,7 @@ import Objectif from "../objectif/Objectif";
 
 function Left() {
   return (
-    <div class="left">
+    <div className="left">
       <Activite />
       <Objectif />
     </div>

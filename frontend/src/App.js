@@ -5,13 +5,14 @@ import Acceuil from "./components/acceuil/Acceuil";
 import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
+  localStorage.setItem("isLoggedIn", false);
   return (
     <>
       <Header />
       <Aside />
       <Routes>
         <Route path="/" element={<Acceuil />} />
-        <Route path="/profil" element={<Dashboard />} />
+        <Route path="/profil/:id" element={<Dashboard />} />
         <Route path="/reglage" />
         <Route path="communaute" />
       </Routes>

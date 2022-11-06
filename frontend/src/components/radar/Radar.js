@@ -1,7 +1,7 @@
 import React from "react";
 
 function Radar() {
-  return <div class="radar"></div>;
+  return <div className="radar"></div>;
 }
 
 export default Radar;

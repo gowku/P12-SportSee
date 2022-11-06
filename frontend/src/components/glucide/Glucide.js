@@ -2,8 +2,8 @@ import React from "react";
 
 function Glucide() {
   return (
-    <div class="right_container glucide">
-      <div class="right_container_glucide">
+    <div className="right_container glucide">
+      <div className="right_container_glucide">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect opacity="0.101652" width="60" height="60" rx="6" fill="#F9CE23" />
           <path
@@ -20,7 +20,7 @@ function Glucide() {
           />
         </svg>
 
-        <div class="right_container_glucide_info">
+        <div className="right_container_glucide_info">
           <p>290g</p>
           <p>Glucides</p>
         </div>

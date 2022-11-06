@@ -6,7 +6,7 @@ import Lipide from "../lipide/Lipide";
 
 function Right() {
   return (
-    <div class="right">
+    <div className="right">
       <Calorie />
       <Proteine />
       <Glucide />

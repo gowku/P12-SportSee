@@ -2,8 +2,8 @@ import React from "react";
 
 function Calorie() {
   return (
-    <div class="right_container calorie">
-      <div class="right_container_calorie">
+    <div className="right_container calorie">
+      <div className="right_container_calorie">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect opacity="0.066125" width="60" height="60" rx="6" fill="#FF0000" />
           <path
@@ -11,7 +11,7 @@ function Calorie() {
             fill="#FF0000"
           />
         </svg>
-        <div class="right_container_calorie_info">
+        <div className="right_container_calorie_info">
           <p>1,930KCal</p>
           <p>Calories</p>
         </div>
