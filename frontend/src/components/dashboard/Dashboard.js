@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Container from "../container/Container";
 import Top from "../top/Top";
 import { getUserDataApi, getUserActivityApi, getUserSessionsApi, getUserPerformanceApi } from "../../Api/api";
-// import { getAllUserData } from "../../Api/api";
+import UserDataFactory from "../../class/user";
 
 function Dashboard() {
   const { id } = useParams();
@@ -14,6 +14,7 @@ function Dashboard() {
   const [userActivity, setUserActivity] = useState("");
   const [userSessions, setUserSessions] = useState("");
   const [userPerformance, setUserPerformance] = useState("");
+  const [allUserDataFormated, setAllUserDataFormated] = useState({});
 
   useEffect(() => {
     const getUserData = async () => {
@@ -37,11 +38,17 @@ function Dashboard() {
     getUserPerformance();
   }, []);
 
-  console.log(userData);
-  console.log(userActivity);
-  console.log(userSessions);
-  console.log(userPerformance);
+  useEffect(() => {
+    setAllUserDataFormated(new UserDataFactory({ userData, userActivity, userSessions, userPerformance }));
+  }, [userData, userActivity, userSessions, userPerformance]);
 
+  console.log(allUserDataFormated);
+
+  // console.log(userData);
+  // console.log(userActivity);
+  // console.log(userSessions);
+  // console.log(userPerformance);
+  // console.log(allUserData);
   return (
     <main>
       {userIsLoggedIn ? (
@@ -57,8 +64,6 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
-// import User from "../../class/user";
 
 // useEffect(() => {
 //   const user = new User(getUserData(id));

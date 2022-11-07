@@ -2,23 +2,6 @@ import axios from "axios";
 
 const baseUrl = "http://localhost:3000/user/";
 
-// const endPoints = (id) => [`${baseUrl}${id}`, `${baseUrl}${id}/average-sessions`, `${baseUrl}${id}/performance`, `${baseUrl}${id}/activity`];
-
-// export const getAllUserData = (id) => {
-//   axios.all(endPoints(id).map((endPoint) => axios.get(endPoint)));
-//   try {
-//     axios.spread(({ data: userData }, { data: userSession }, { data: userPerformance }, { data: userActivity }) => {
-//       console.log(userData);
-//       return userData.data;
-//     });
-//     // console.log(userData);
-//     // const AllUserData = { userData, userSession, userPerformance, userActivity };
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-// getAllUserData(12);
-
 const getUserDataApi = async (id) => {
   try {
     const { data: response } = await axios({
@@ -70,3 +53,20 @@ const getUserPerformanceApi = async (id) => {
 };
 
 export { getUserDataApi, getUserActivityApi, getUserSessionsApi, getUserPerformanceApi };
+
+// const endPoints = (id) => [`${baseUrl}${id}`, `${baseUrl}${id}/average-sessions`, `${baseUrl}${id}/performance`, `${baseUrl}${id}/activity`];
+
+// export const getAllUserData = (id) => {
+//   axios.all(endPoints(id).map((endPoint) => axios.get(endPoint)));
+//   try {
+//     axios.spread(({ data: userData }, { data: userSession }, { data: userPerformance }, { data: userActivity }) => {
+//       console.log(userData);
+//       return userData.data;
+//     });
+//     // console.log(userData);
+//     // const AllUserData = { userData, userSession, userPerformance, userActivity };
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// getAllUserData(12);
