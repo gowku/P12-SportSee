@@ -1,10 +1,10 @@
 import React from "react";
 
-function Top() {
+function Top({ name }) {
   return (
     <div className="top">
       <p>
-        Bonjour <span>Thomas</span>
+        Bonjour <span>{name}</span>
       </p>
       <p>Félicitation ! Vous avez explosé vos objectif hier 👏</p>
     </div>

@@ -42,7 +42,7 @@ function Dashboard() {
     setAllUserDataFormated(new UserDataFactory({ userData, userActivity, userSessions, userPerformance }));
   }, [userData, userActivity, userSessions, userPerformance]);
 
-  console.log(allUserDataFormated);
+  // console.log(allUserDataFormated.keyData);
 
   // console.log(userData);
   // console.log(userActivity);
@@ -53,8 +53,8 @@ function Dashboard() {
     <main>
       {userIsLoggedIn ? (
         <>
-          <Top />
-          <Container />
+          <Top name={allUserDataFormated?.userInfo?.firstName} />
+          <Container keyData={allUserDataFormated?.keyData} />
         </>
       ) : (
         ""
