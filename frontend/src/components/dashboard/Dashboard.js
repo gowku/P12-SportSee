@@ -54,7 +54,13 @@ function Dashboard() {
       {userIsLoggedIn ? (
         <>
           <Top name={allUserDataFormated?.userInfo?.firstName} />
-          <Container keyData={allUserDataFormated?.keyData} />
+          <Container
+            keyData={allUserDataFormated?.keyData}
+            activity={allUserDataFormated?.userActivity}
+            sessions={allUserDataFormated?.sessionsMoyenne}
+            performance={allUserDataFormated?.performance}
+            score={allUserDataFormated?.userInfo?.score}
+          />
         </>
       ) : (
         ""

@@ -1,6 +1,7 @@
-import React from "react";
+import GraphiqueActivity from "../graphiques/graphiqueActivity/GraphiqueActivity";
 
-function Activite() {
+function Activite({ activity }) {
+  console.log(activity);
   return (
     <div className="activite">
       <div className="activite_top">
@@ -30,6 +31,7 @@ function Activite() {
           </div>
         </div>
       </div>
+      <GraphiqueActivity activity={activity} />
     </div>
   );
 }

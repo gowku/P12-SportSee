@@ -2,11 +2,11 @@ import React from "react";
 import Activite from "../activite/Activite";
 import Objectif from "../objectif/Objectif";
 
-function Left() {
+function Left({ activity, sessions, performance, score }) {
   return (
     <div className="left">
-      <Activite />
-      <Objectif />
+      <Activite activity={activity} />
+      <Objectif sessions={sessions} performance={performance} score={score} />
     </div>
   );
 }

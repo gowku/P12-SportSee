@@ -2,14 +2,13 @@ import React from "react";
 
 function Keydata({ calorie, proteine, glucide, lipide }) {
   let result;
-  console.log(calorie);
+  // console.log(calorie);
   if (calorie !== undefined) {
     let numberToChange = calorie.toString().split("");
     const insert = (arr, index, newItem) => [...arr.slice(0, index), newItem, ...arr.slice(index)];
     let arrWithComa = insert(numberToChange, 1, ",");
     result = arrWithComa.join("");
-    console.log("ici", result);
-    console.log(typeof calorie);
+    // console.log("ici", result);
   }
   let content;
 
