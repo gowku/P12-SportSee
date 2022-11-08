@@ -10,6 +10,7 @@ function Dashboard() {
   const userIsLoggedIn = localStorage.getItem("isLoggedIn");
   // console.log(userIsLoggedIn);
 
+  const [isLoading, setIsLoading] = useState(true);
   const [userData, setUserData] = useState("");
   const [userActivity, setUserActivity] = useState("");
   const [userSessions, setUserSessions] = useState("");
@@ -36,13 +37,16 @@ function Dashboard() {
       setUserPerformance(await getUserPerformanceApi(id));
     };
     getUserPerformance();
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
-    setAllUserDataFormated(new UserDataFactory({ userData, userActivity, userSessions, userPerformance }));
+    if (!isLoading) {
+      setAllUserDataFormated(new UserDataFactory({ userData, userActivity, userSessions, userPerformance }));
+    }
   }, [userData, userActivity, userSessions, userPerformance]);
 
-  // console.log(allUserDataFormated.keyData);
+  console.log(allUserDataFormated);
 
   // console.log(userData);
   // console.log(userActivity);
@@ -51,7 +55,7 @@ function Dashboard() {
   // console.log(allUserData);
   return (
     <main>
-      {userIsLoggedIn ? (
+      {userIsLoggedIn && !isLoading ? (
         <>
           <Top name={allUserDataFormated?.userInfo?.firstName} />
           <Container
@@ -59,7 +63,8 @@ function Dashboard() {
             activity={allUserDataFormated?.userActivity}
             sessions={allUserDataFormated?.sessionsMoyenne}
             performance={allUserDataFormated?.performance}
-            score={allUserDataFormated?.userInfo?.score}
+            // score={allUserDataFormated?.userInfo?.score}
+            score={allUserDataFormated?.score}
           />
         </>
       ) : (

@@ -34,7 +34,7 @@ class CustomizedAxisTick extends PureComponent {
 
 function CustomizedTooltip({ active, payload, label }) {
   if (active) {
-    console.log(payload[0].payload);
+    // console.log(payload[0].payload);
     return <div className="tooltip_session">{payload[0].payload.dureeSession} min</div>;
   }
   return null;

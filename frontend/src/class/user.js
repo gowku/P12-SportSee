@@ -20,15 +20,16 @@ const translatedKind = {
 
 class UserDataFactory {
   constructor(data) {
-    // super(data);
-    // console.log(data);
-
     this.userInfo = {
       userId: data?.userData?.id,
       firstName: data?.userData?.userInfos?.firstName,
       lastName: data?.userData?.userInfos?.lastName,
       age: data?.userData?.userInfos?.age,
-      score: data?.userData?.todayScore || data?.userData?.score,
+      // score: data?.userData?.todayScore * 100 || data?.userData?.score * 100,
+    };
+    this.score = {
+      name: data?.userData?.userInfos?.firstName,
+      value: data?.userData?.todayScore * 100 || data?.userData?.score * 100,
     };
     this.keyData = {
       calorie: data?.userData?.keyData?.calorieCount,

@@ -1,15 +1,21 @@
 import React from "react";
+import GraphiqueScore from "../graphiques/graphiqueScore/GraphiqueScore";
 
-function Kpi() {
+function Kpi({ score }) {
+  console.log(score);
   return (
-    <div className="kpi">
-      <p className="kpi_absolute">Score</p>
-      <div className="pourcentage">
-        <p>12%</p>
-        <p>de votre</p>
-        <p>objectif</p>
+    <>
+      <div className="kpi">
+        <p className="kpi_absolute">Score</p>
+        <div className="pourcentage">
+          {score !== undefined && <p>{score.value}%</p>}
+          {/* <p>12%</p> */}
+          <p>de votre</p>
+          <p>objectif</p>
+        </div>
+        <GraphiqueScore score={score} />
       </div>
-    </div>
+    </>
   );
 }
 

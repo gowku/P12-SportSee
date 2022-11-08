@@ -15,6 +15,8 @@
   }
 
   .pourcentage {
+    position: absolute;
+    z-index: 1;
     width: 4rem;
     text-align: center;
   }
