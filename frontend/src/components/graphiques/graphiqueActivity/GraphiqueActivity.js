@@ -6,7 +6,7 @@ function GraphiqueActivity({ activity }) {
     <ResponsiveContainer width="95%" height={250}>
       <BarChart data={activity} margin={{ top: 20, left: 10, right: -20, bottom: -5 }}>
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
-        <XAxis dataKey="day" tickLine={false} padding={{ left: -50, right: -50 }} />
+        <XAxis dataKey="day" tickLine={false} padding={{ left: -50, right: -50 }} tick={<CustomizedAxisTick />} />
         <YAxis
           yAxisId={1}
           tickLine={false}
@@ -40,17 +40,16 @@ function CustomizedTooltip({ active, payload, label }) {
   return null;
 }
 
-// class CustomizedAxisTick extends PureComponent {
-//   render() {
-//     const { x, y, stroke, payload } = this.props;
+class CustomizedAxisTick extends PureComponent {
+  render() {
+    const { x, y, stroke, payload } = this.props;
 
-//     return (
-//       <g transform={`translate(${x},${y})`}>
-//         <text x={0} y={0} dy={16} textAnchor="end" fill="#666">
-//           {payload.value}
-//         </text>
-//       </g>
-//     );
-//   }
-// }
-// tick={<CustomizedAxisTick />}
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text x={0} y={0} dy={16} textAnchor="end" fill="#666">
+          {payload.value}
+        </text>
+      </g>
+    );
+  }
+}

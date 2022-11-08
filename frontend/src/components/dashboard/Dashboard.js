@@ -75,16 +75,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
-// useEffect(() => {
-//   const user = new User(getUserData(id));
-//   setUserData(user);
-//   // setUserData(getUserData(id));
-//   // setUserActivity(getUserActivity(id));
-//   // setUserSessions(getUserSessions(id));
-//   // setUserPerformance(getUserPerformance(id));
-// }, []);
-
-// console.log(userActivity);
-// console.log(userSessions);
-// console.log(userPerformance);
