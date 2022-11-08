@@ -170,12 +170,15 @@ main {
 }
 
 .tooltip_activite {
-  // li{
-
-  // }
   font-style: normal;
   font-weight: 500;
   font-size: 0.7rem;
   line-height: 1.5rem;
   color: $textPrimary;
+}
+.xAxis-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }

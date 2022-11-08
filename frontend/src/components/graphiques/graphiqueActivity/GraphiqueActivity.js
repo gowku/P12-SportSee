@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar } from "recharts";
+import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Bar } from "recharts";
 
 function GraphiqueActivity({ activity }) {
   return (
@@ -18,7 +18,6 @@ function GraphiqueActivity({ activity }) {
         />
         <YAxis hide yAxisId={2} dataKey="calories" domain={[0, "dataMax + 100"]} />
         <Tooltip content={<CustomizedTooltip />} />
-        <Legend />
         <Bar yAxisId={1} dataKey="kilogramme" fill="#282D30" legendType="none" barSize={7} radius={[5, 5, 0, 0]} />
         <Bar yAxisId={2} dataKey="calories" fill="#e60000" legendType="none" barSize={7} radius={[5, 5, 0, 0]} />
       </BarChart>
