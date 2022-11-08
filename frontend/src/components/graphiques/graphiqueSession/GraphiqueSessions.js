@@ -9,7 +9,7 @@ function GraphiqueSessions({ sessions }) {
       <LineChart data={sessions}>
         <XAxis dataKey="day" axisLine={false} tickLine={false} tick={<CustomizedAxisTick />} interval={"preserveStartEnd"} />
         <YAxis hide dataKey="dureeSession" />
-        <Tooltip />
+        <Tooltip content={<CustomizedTooltip />} />
         <Line dataKey="dureeSession" legendType="none" type="natural" stroke="#FFFFFF" strokeWidth="1.5" dot={false} />
       </LineChart>
     </ResponsiveContainer>
@@ -30,4 +30,12 @@ class CustomizedAxisTick extends PureComponent {
       </g>
     );
   }
+}
+
+function CustomizedTooltip({ active, payload, label }) {
+  if (active) {
+    console.log(payload[0].payload);
+    return <div className="tooltip_session">{payload[0].payload.dureeSession} min</div>;
+  }
+  return null;
 }

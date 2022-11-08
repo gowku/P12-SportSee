@@ -16,3 +16,11 @@
 .recharts-cartesian-axis-tick:nth-child(7) {
   transform: translateX(-17px);
 }
+.tooltip_session {
+  //   border: 1px solid black;
+  background-color: $textPrimary;
+  height: 2rem;
+  width: 4rem;
+  text-align: center;
+  padding-top: 0.4rem;
+}
