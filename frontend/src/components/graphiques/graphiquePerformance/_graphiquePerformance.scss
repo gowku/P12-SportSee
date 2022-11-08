@@ -1,0 +1,18 @@
+.recharts-polar-angle-axis-tick:nth-child(1) {
+  transform: translateY(-5px);
+}
+.recharts-polar-angle-axis-tick:nth-child(3) {
+  transform: translateX(5px);
+}
+.recharts-polar-angle-axis-tick:nth-child(4) {
+  transform: translateY(10px);
+}
+
+.recharts-polar-angle-axis-tick:nth-child(6) {
+  transform: translateX(-5px);
+}
+
+.recharts-polar-grid-angle,
+.recharts-polar-radius-axis {
+  display: none;
+}

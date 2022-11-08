@@ -2,7 +2,7 @@ import { PureComponent } from "react";
 import { ResponsiveContainer, LineChart, XAxis, YAxis, Tooltip, Line } from "recharts";
 
 function GraphiqueSessions({ sessions }) {
-  console.log(sessions);
+  //   console.log(sessions);
 
   return (
     <ResponsiveContainer width="100%" height={170}>
