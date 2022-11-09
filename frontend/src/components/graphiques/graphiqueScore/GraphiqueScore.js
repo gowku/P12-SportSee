@@ -7,9 +7,9 @@ function GraphiqueScore({ score }) {
   if (score !== undefined) {
     scoreData = [];
     scoreData.push(score);
-    console.log(scoreData);
+    // console.log(scoreData);
     graphValue = 3.6 * scoreData[0].value;
-    console.log(graphValue);
+    // console.log(graphValue);
   }
 
   return (

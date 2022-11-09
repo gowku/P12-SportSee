@@ -2,7 +2,7 @@ import React from "react";
 import GraphiqueScore from "../graphiques/graphiqueScore/GraphiqueScore";
 
 function Kpi({ score }) {
-  console.log(score);
+  // console.log(score);
   return (
     <>
       <div className="kpi">
