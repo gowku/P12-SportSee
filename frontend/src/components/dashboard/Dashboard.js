@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Container from "../container/Container";
 import Top from "../top/Top";
-import { getUserDataApi, getUserActivityApi, getUserSessionsApi, getUserPerformanceApi, getMockedDataApi } from "../../Api/api";
+import { getUserDataApi, getUserActivityApi, getUserSessionsApi, getUserPerformanceApi } from "../../Api/api";
 import UserDataFactory from "../../class/user";
-import dataMocked from "../../Api/dataMocked";
+import dataMocked from "../../Api/data";
 
 function Dashboard() {
   const { id } = useParams();
   const userIsLoggedIn = localStorage.getItem("isLoggedIn");
   // console.log(userIsLoggedIn);
 
-  // console.log(dataMocked);
   const useMockedData = localStorage.getItem("useMockedData");
   const user = localStorage.getItem("userId");
 
+  // console.log(dataMocked);
   const [isLoading, setIsLoading] = useState(true);
   const [userData, setUserData] = useState("");
   const [userActivity, setUserActivity] = useState("");

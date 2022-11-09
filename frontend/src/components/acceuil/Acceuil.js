@@ -13,7 +13,7 @@ function Acceuil() {
   const handleChange = () => {
     setChecked(!checked);
   };
-  // console.log(checked);
+  console.log(checked);
 
   useEffect(() => {
     localStorage.setItem("useMockedData", checked);
