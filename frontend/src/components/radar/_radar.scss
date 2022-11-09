@@ -1,8 +1,19 @@
 .radar {
   // width: 16.1rem;
-  width: auto;
-  // height: 16.4rem;
+  width: 30%;
+  min-width: 10rem;
+  aspect-ratio: 1/1;
+  // max-height: 16.4rem;
   background-color: $baton;
-  // border: 1px solid black;
   border-radius: 5px;
+  &_container {
+    border: 1px solid blue;
+    width: 95%;
+    height: 95%;
+    // margin: auto;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    // align-items: center;
+  }
 }

@@ -3,7 +3,7 @@ import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Ba
 
 function GraphiqueActivity({ activity }) {
   return (
-    <ResponsiveContainer width="95%" height={250}>
+    <ResponsiveContainer width="90%" height="80%">
       <BarChart data={activity} margin={{ top: 20, left: 10, right: -20, bottom: -5 }}>
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
         <XAxis dataKey="day" tickLine={false} padding={{ left: -50, right: -50 }} tick={<CustomizedAxisTick />} />

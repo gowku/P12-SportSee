@@ -13,7 +13,7 @@ function GraphiqueScore({ score }) {
   }
 
   return (
-    <ResponsiveContainer width="100%" height={250}>
+    <ResponsiveContainer width="100%" height="100%">
       <RadialBarChart innerRadius="100%" barSize={10} outerRadius="70%" data={scoreData} startAngle={180} endAngle={180 - graphValue}>
         <RadialBar minAngle={15} background clockWise={true} dataKey="value" style={{ fill: "#e60000" }} cornerRadius={10} />
       </RadialBarChart>

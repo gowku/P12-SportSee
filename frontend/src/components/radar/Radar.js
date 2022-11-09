@@ -4,7 +4,9 @@ import GraphiquePerformance from "../graphiques/graphiquePerformance/GraphiquePe
 function Radar({ performance }) {
   return (
     <div className="radar">
-      <GraphiquePerformance performance={performance} />
+      <div className="radar_container">
+        <GraphiquePerformance performance={performance} />
+      </div>
     </div>
   );
 }

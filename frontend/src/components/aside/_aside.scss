@@ -1,7 +1,9 @@
 aside {
   position: absolute;
+  border: 1px solid yellow;
   width: 7.3rem;
-  height: 91.4%;
+  // height: 91.4%;
+  height: 60rem;
   background-color: $bgNav;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   nav {

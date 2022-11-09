@@ -3,8 +3,8 @@ import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, Responsi
 function GraphiquePerformance({ performance }) {
   //   console.log(performance);
   return (
-    <ResponsiveContainer width="100%" height={280}>
-      <RadarChart outerRadius={90} data={performance}>
+    <ResponsiveContainer width="80%">
+      <RadarChart outerRadius={75} data={performance}>
         <PolarGrid />
         <PolarAngleAxis dataKey="kind" tickLine={false} stroke={"#ffffff"} />
         {/* <PolarRadiusAxis tickCount="6" x1="129" y1="140" x2="219" y2="140" /> */}

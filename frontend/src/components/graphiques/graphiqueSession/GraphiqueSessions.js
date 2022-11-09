@@ -5,7 +5,7 @@ function GraphiqueSessions({ sessions }) {
   //   console.log(sessions);
 
   return (
-    <ResponsiveContainer width="100%" height={170}>
+    <ResponsiveContainer width="100%" height="65%">
       <LineChart data={sessions}>
         <XAxis dataKey="day" axisLine={false} tickLine={false} tick={<CustomizedAxisTick />} interval={"preserveStartEnd"} />
         <YAxis hide dataKey="dureeSession" />

@@ -4,3 +4,11 @@ main {
   margin-top: 6rem;
   height: 88.2%;
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    // border: 1px solid black;
+    margin-left: 8rem;
+    margin-top: 2rem;
+  }
+}
