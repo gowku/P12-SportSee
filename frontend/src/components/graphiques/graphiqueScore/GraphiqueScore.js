@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { RadialBar, RadialBarChart, ResponsiveContainer } from "recharts";
 
 function GraphiqueScore({ score }) {
@@ -22,3 +23,10 @@ function GraphiqueScore({ score }) {
 }
 
 export default GraphiqueScore;
+
+GraphiqueScore.propTypes = {
+  score: PropTypes.shape({
+    name: PropTypes.string,
+    value: PropTypes.number,
+  }),
+};

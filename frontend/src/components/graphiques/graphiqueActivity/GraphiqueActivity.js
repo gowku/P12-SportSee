@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { PureComponent } from "react";
 import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Bar } from "recharts";
 
@@ -53,3 +55,13 @@ class CustomizedAxisTick extends PureComponent {
     );
   }
 }
+
+GraphiqueActivity.propType = {
+  activity: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number,
+      kilogramme: PropTypes.number,
+      calories: PropTypes.number,
+    })
+  ),
+};

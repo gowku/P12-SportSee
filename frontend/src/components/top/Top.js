@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 function Top({ name }) {
   return (
@@ -12,3 +12,7 @@ function Top({ name }) {
 }
 
 export default Top;
+
+Top.propTypes = {
+  name: PropTypes.string,
+};

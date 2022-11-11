@@ -35,7 +35,7 @@ function Dashboard() {
         setUserSessions(dataMocked.USER_AVERAGE_SESSIONS[1]);
         setUserPerformance(dataMocked.USER_PERFORMANCE[1]);
       }
-      // console.log("on utilise les données mocké");
+      console.log("on utilise les données mocké");
     } else {
       const getUserData = async () => {
         setUserData(await getUserDataApi(id));
@@ -53,7 +53,7 @@ function Dashboard() {
         setUserPerformance(await getUserPerformanceApi(id));
       };
       getUserPerformance();
-      // console.log("on utilise les donées de l'api");
+      console.log("on utilise les donées de l'api");
     }
     setIsLoading(false);
   }, []);

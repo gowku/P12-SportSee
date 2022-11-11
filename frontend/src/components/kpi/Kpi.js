@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import GraphiqueScore from "../graphiques/graphiqueScore/GraphiqueScore";
 
 function Kpi({ score }) {
@@ -20,3 +20,10 @@ function Kpi({ score }) {
 }
 
 export default Kpi;
+
+Kpi.propTypes = {
+  score: PropTypes.shape({
+    name: PropTypes.string,
+    value: PropTypes.number,
+  }),
+};

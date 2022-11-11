@@ -1,5 +1,6 @@
+import PropTypes from "prop-types";
 import { PureComponent } from "react";
-import { ResponsiveContainer, LineChart, XAxis, YAxis, Tooltip, Line } from "recharts";
+import { ResponsiveContainer, LineChart, XAxis, YAxis, Tooltip, Line, Rectangle } from "recharts";
 
 function GraphiqueSessions({ sessions }) {
   //   console.log(sessions);
@@ -9,7 +10,7 @@ function GraphiqueSessions({ sessions }) {
       <LineChart data={sessions}>
         <XAxis dataKey="day" axisLine={false} tickLine={false} tick={<CustomizedAxisTick />} interval={"preserveStartEnd"} />
         <YAxis hide dataKey="dureeSession" />
-        <Tooltip content={<CustomizedTooltip />} />
+        <Tooltip content={<CustomizedTooltip />} wrapperStyle={{ outline: "none" }} cursor={<CustomizedCursor />} />
         <Line dataKey="dureeSession" legendType="none" type="natural" stroke="#FFFFFF" strokeWidth="1.5" dot={false} />
       </LineChart>
     </ResponsiveContainer>
@@ -39,3 +40,22 @@ function CustomizedTooltip({ active, payload, label }) {
   }
   return null;
 }
+
+const CustomizedCursor = (props) => {
+  const { x, y, width, height, stroke } = props;
+  console.log(props);
+  return <Rectangle fill="red" stroke="red" x={x} y={y} width={width} height={height} />;
+  // <>
+  // <Rectangle fill="red" stroke="red" x={x} y={y} width={width} height={height} />;
+  /* <Rectangle fill="red" stroke="red" x={x} y={y} width={width + "50"} height={height + "50"} />; */
+  /* </> */
+};
+
+GraphiqueSessions.propTypes = {
+  sessions: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      dureeSession: PropTypes.number,
+    })
+  ),
+};

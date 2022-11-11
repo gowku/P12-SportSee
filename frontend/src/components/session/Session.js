@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 import GraphiqueSessions from "../graphiques/graphiqueSession/GraphiqueSessions";
 
 function Session({ sessions }) {
@@ -11,3 +12,11 @@ function Session({ sessions }) {
 }
 
 export default Session;
+Session.propTypes = {
+  sessions: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      dureeSession: PropTypes.number,
+    })
+  ),
+};

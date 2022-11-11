@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
 import GraphiqueActivity from "../graphiques/graphiqueActivity/GraphiqueActivity";
 
 function Activite({ activity }) {
-  // console.log(activity);
   return (
     <div className="activite">
       <div className="activite_top">
@@ -37,3 +37,13 @@ function Activite({ activity }) {
 }
 
 export default Activite;
+
+Activite.propType = {
+  activity: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number,
+      kilogramme: PropTypes.number,
+      calories: PropTypes.number,
+    })
+  ),
+};
