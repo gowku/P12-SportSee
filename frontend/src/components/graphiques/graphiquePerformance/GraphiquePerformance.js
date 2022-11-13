@@ -4,7 +4,7 @@ import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, Responsi
 function GraphiquePerformance({ performance }) {
   //   console.log(performance);
   return (
-    <ResponsiveContainer width="80%">
+    <ResponsiveContainer>
       <RadarChart outerRadius={75} data={performance}>
         <PolarGrid radialLines={false} />
         <PolarAngleAxis dataKey="kind" tickLine={false} stroke={"#ffffff"} />

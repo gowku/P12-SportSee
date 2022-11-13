@@ -20,6 +20,9 @@
   &_container:nth-child(1) {
     margin-top: 4rem;
   }
+  &_container:nth-child(4) {
+    margin-bottom: 4rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .right_container {
@@ -27,5 +30,8 @@
   }
   .right_container:nth-child(1) {
     margin-top: 1rem;
+  }
+  .right_container:nth-child(4) {
+    margin-bottom: 1rem;
   }
 }
